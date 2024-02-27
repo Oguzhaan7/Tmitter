@@ -13,7 +13,6 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
     {
         _context = context;
     }
-
     public virtual IQueryable<T> AsQueryable() => _context.Set<T>().AsQueryable();
 
     // Add methods
