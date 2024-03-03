@@ -1,11 +1,6 @@
-@Tmitter.Api_HostAddress = http://localhost:5274
+@Tmitter.Api_HostAddress = http://localhost:5168
 
-GET {{Tmitter.Api_HostAddress}}/todos/
-Accept: application/json
-
-###
-
-GET {{Tmitter.Api_HostAddress}}/todos/1
+GET {{Tmitter.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

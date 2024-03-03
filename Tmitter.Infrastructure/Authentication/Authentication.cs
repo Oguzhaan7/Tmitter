@@ -2,6 +2,7 @@
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Tmitter.Application.Common.Authentication;
 using Tmitter.Domain;
@@ -12,9 +13,9 @@ public class Authentication : IAuthentication
 {
     private readonly JwtSettings jwtSettings;
 
-    public Authentication(JwtSettings jwtSettings)
+    public Authentication(IOptions<JwtSettings> jwtSettings)
     {
-        this.jwtSettings = jwtSettings;
+        this.jwtSettings = jwtSettings.Value;
     }
 
     public string GenerateToken(User user)

@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tmitter.Application", "Tmit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tmitter.Infrastructure", "Tmitter.Infrastructure\Tmitter.Infrastructure.csproj", "{529498BF-666C-446C-B8E5-1985F70518D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tmitter.Api", "Tmitter.Api\Tmitter.Api.csproj", "{C5D64DED-E5E9-4C49-9817-C80BB1F5DB2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tmitter.Api", "Tmitter.Api\Tmitter.Api.csproj", "{594DFB04-306F-4E6D-BA2F-4CB7235D03BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,9 @@ Global
 		{529498BF-666C-446C-B8E5-1985F70518D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{529498BF-666C-446C-B8E5-1985F70518D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{529498BF-666C-446C-B8E5-1985F70518D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5D64DED-E5E9-4C49-9817-C80BB1F5DB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5D64DED-E5E9-4C49-9817-C80BB1F5DB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5D64DED-E5E9-4C49-9817-C80BB1F5DB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5D64DED-E5E9-4C49-9817-C80BB1F5DB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{594DFB04-306F-4E6D-BA2F-4CB7235D03BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594DFB04-306F-4E6D-BA2F-4CB7235D03BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594DFB04-306F-4E6D-BA2F-4CB7235D03BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594DFB04-306F-4E6D-BA2F-4CB7235D03BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
