@@ -61,13 +61,13 @@ public static class DependencyInjectionRegister
 
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
-        // services.AddScoped<IUserRepository, UserRepository>();
-        // services.AddScoped<IPostRepository, PostRepository>();
-        // services.AddScoped<INotificationRepository, NotificationRepository>();
-        // services.AddScoped<IMessageRepository, MessageRepository>();
-        // services.AddScoped<ILikeRepository, LikeRepository>();
-        // services.AddScoped<IHashtagRepository, HashtagRepository>();
-        // services.AddScoped<ICommentRepository, CommentRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IPostRepository, PostRepository>();
+        services.AddScoped<INotificationRepository, NotificationRepository>();
+        services.AddScoped<IMessageRepository, MessageRepository>();
+        services.AddScoped<ILikeRepository, LikeRepository>();
+        services.AddScoped<IHashtagRepository, HashtagRepository>();
+        services.AddScoped<ICommentRepository, CommentRepository>();
 
         return services;
     }

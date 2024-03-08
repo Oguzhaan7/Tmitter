@@ -23,7 +23,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired();
 
         builder.Property(user => user.Password)
-            .HasMaxLength(50)
+            .HasMaxLength(64)
             .IsRequired();
 
         builder.Property(user => user.FullName)

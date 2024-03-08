@@ -10,4 +10,5 @@ public class UserResponse
     public string ProfilePicture { get; set; } = null!;
     public string Bio { get; set; } = string.Empty;
     public string Website { get; set; } = string.Empty;
+    public string Token { get; set; } = null!;
 }

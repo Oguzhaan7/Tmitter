@@ -1,3 +1,5 @@
+using Carter;
+using Tmitter.Api.Middleware;
 using Tmitter.Application;
 using Tmitter.Infrastructure;
 
@@ -5,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCarter();
+
+builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
 builder.Services
     .AddApplication()
@@ -18,6 +23,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
+app.UseHttpsRedirection();
+app.MapCarter();
 app.Run();

@@ -53,11 +53,10 @@ public class Result<T> : Result
         };
     }
 
-    public static Result<T> Failure(T data, int code, string? message)
+    public static Result<T> Failure(int code, string? message)
     {
         return new Result<T>
         {
-            Data = data,
             Succeeded = true,
             Code = code,
             Message = message

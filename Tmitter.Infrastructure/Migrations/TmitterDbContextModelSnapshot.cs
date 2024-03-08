@@ -227,7 +227,7 @@ namespace Tmitter.Infrastructure.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(50)
+                        .HasMaxLength(64)
                         .HasColumnType("character varying(50)");
 
                     b.Property<string>("ProfilePicture")

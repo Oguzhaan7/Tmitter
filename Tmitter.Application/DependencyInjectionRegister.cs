@@ -2,7 +2,10 @@
 using FluentValidation;
 using Mapster;
 using MapsterMapper;
+using MediatR;
+using MediatR.Pipeline;
 using Microsoft.Extensions.DependencyInjection;
+using Tmitter.Application.Common.Behaviors;
 
 namespace Tmitter.Application;
 
@@ -17,6 +20,7 @@ public static class DependencyInjectionRegister
         services.AddScoped<IMapper, ServiceMapper>();
 
         services.AddMediatR(config => { config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()); });
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
